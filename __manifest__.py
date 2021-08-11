@@ -1,0 +1,22 @@
+{
+    "name": "Demo SQL View",
+    "summary": """Demo sql view of res.partner""",
+    "category": "Uncategorized",
+    "version": "14.0.0.1",
+    "author": "Telescope Casual - Zach Waite",
+    "depends": ["contacts", "sale_management"],
+    "data": [
+        "security/ir.model.access.csv",
+        "views/customer_sales_viewmodel_views.xml",
+    ],
+    "demo": [],
+    "qweb": [],
+    "images": [],
+    "post_load": None,
+    "pre_init_hook": None,
+    "post_init_hook": None,
+    "uninstall_hook": None,
+    "application": False,
+    "auto_install": False,
+    "installable": True,
+}

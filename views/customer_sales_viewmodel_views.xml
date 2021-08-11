@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <data>
+
+     <record id="view_customer_sales_viewmodel_tree" model="ir.ui.view">
+       <field name="name">view_customer_sales_viewmodel_tree</field>
+       <field name="model">customer.sales.viewmodel</field>
+       <field name="arch" type="xml">
+         <tree>
+           <field name="id" />
+           <field name="customer_name" />
+           <field name="total_sales" />
+         </tree>
+       </field>
+     </record>
+
+    <record id="action_customer_sales_viewmodel" model="ir.actions.act_window">
+      <field name="name">Customer Sales Viewmodel</field>
+      <field name="res_model">customer.sales.viewmodel</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="menu_customer_sales_viewmodel"
+        name="Customer Sales Viewmodel"
+        parent="contacts.menu_contacts"
+        sequence="99"
+        groups="base.group_user"
+        action="action_customer_sales_viewmodel"
+      />
+
+  </data>
+</odoo>
